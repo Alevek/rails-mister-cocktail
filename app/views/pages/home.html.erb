@@ -2,8 +2,11 @@
   <h1>La maison du cocktail</h1>
   <p>
   <span id="banner-typed-text"></span>
-  <p>Dernière création <%= link_to Cocktail.last.name, cocktails_path %></p>
-</p>
+    <p>Dernière création
+      <% if Cocktail.last.name %>
+        <%= link_to Cocktail.last.name, cocktails_path %></p>
+      <% end %>
+ </p>
 </div>
 
 <div class="container">
