@@ -3,7 +3,7 @@
   <p>
   <span id="banner-typed-text"></span>
     <p>Dernière création
-      <% if Cocktail.last.name %>
+      <% if Cocktail.all.size > 0 %>
         <%= link_to Cocktail.last.name, cocktails_path %></p>
       <% end %>
  </p>
