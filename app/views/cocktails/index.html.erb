@@ -1,7 +1,16 @@
-<h1>cocktails view</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= cocktail.name %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h1 class="title">cocktails</h1>
+  <div class="container d-inline-flex">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          <%= link_to cocktail.name, cocktail_path(cocktail)%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div><%= link_to 'Add a new cocktail', new_cocktail_path %></div>
+</div>
+
+

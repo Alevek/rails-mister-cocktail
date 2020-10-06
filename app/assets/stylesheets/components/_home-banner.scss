@@ -1,0 +1,21 @@
+
+.home-banner {
+  background-image: url('https://static.wixstatic.com/media/742f39_96e0c657334344b59d41e1a0081955a1~mv2_d_8256_5504_s_4_2.jpg/v1/fill/w_2001,h_1334,al_c,q_90/742f39_96e0c657334344b59d41e1a0081955a1~mv2_d_8256_5504_s_4_2.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+    a {
+      color: white;
+      text-decoration: none;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: monospace;
+  }
+}
+span#banner-typed-text {
+    font-family: monospace;
+    font-size: 30px;
+}
