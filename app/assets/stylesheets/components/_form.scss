@@ -1,6 +1,35 @@
-li.list-group-item.doses {
-  border-radius: 15px;
-  background-color: #f9ecec;
+    li.list-group-item.doses {
+    border-radius: 15px;
+    background-color: #d0c0c0;
+    color: #565252;
+    font-size: 16px;
+    width: 500px;
+ }
+
+
+form#new_cocktail {
+    width: 446px;
+    position: absolute;
+    left: 365px;
+    font-size: 14px;
+    text-align-last: left;
+  }
+input.btn.btn-primary {
+    background-color: #9f412e;
+    border-color: #9f412e;
+    font-family: monospace;
 
 }
+label {
+    background-color: white;
+    color: brown;
+    font-family: monospace;
+}
 
+form#new_dose {
+    width: 446px;
+    position: absolute;
+    left: 422px;
+    font-size: 14px;
+    text-align: left;
+  }

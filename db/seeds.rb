@@ -10,6 +10,7 @@ require 'open-uri'
 
 Dose.destroy_all
 Ingredient.destroy_all
+Cocktail.destroy_all
 
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
@@ -24,3 +25,8 @@ drinks['drinks'].each do |drink|
   Ingredient.create(name: ingredient)
   puts 'done'
 end
+
+
+file = URI.open('https://shanghai-paper.com/wp-content/uploads/2020/06/Beer-in-China.jpg')
+cocktail = Cocktail.new(name: 'Beer')
+cocktail.photo.attach(io: file, filename: 'beer.jpg', content_type: 'image/jpg')

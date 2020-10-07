@@ -1,12 +1,15 @@
 
-<div class="container d-flex align-items-center justify-content-center">
-  <div>
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg" alt="nn">
-  </div>
-  <div>
-    <%= simple_form_for @cocktail do |f| %>
-      <%= f.input :name %>
-      <%= f.button :submit, class: "btn-primary" %>
-    <% end %>
+<div class="new-banner">
+  <div class="container">
+    <h1 class="title"> #Ajouter une nouvelle recette</h1>
+    <div class="container">
+      <div>
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name, label: 'Renseigner un titre'%>
+        <%= f.input :photo, label: 'Ajouter une photo', as: :file %>
+        <%= f.button :submit, value: "Créer", class: "btn-primary" %>
+      <% end %>
+      </div>
+    </div>
   </div>
 </div>
