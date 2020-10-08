@@ -1,0 +1,14 @@
+
+<div class="new-banner">
+  <div class="container">
+    <h1 class="title"> #Laisser un commentaire</h1>
+    <div class="container">
+      <div>
+        <%= simple_form_for [ @cocktail, @review ] do |f| %>
+        <%= f.input :content %>
+        <%= f.submit "Submit review", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
