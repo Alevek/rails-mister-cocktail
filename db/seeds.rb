@@ -27,6 +27,3 @@ drinks['drinks'].each do |drink|
 end
 
 
-file = URI.open('https://shanghai-paper.com/wp-content/uploads/2020/06/Beer-in-China.jpg')
-cocktail = Cocktail.new(name: 'Beer')
-cocktail.photo.attach(io: file, filename: 'beer.jpg', content_type: 'image/jpg')
